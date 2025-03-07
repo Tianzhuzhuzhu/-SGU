@@ -39,6 +39,19 @@
     button:hover {
       background-color: #005bb5;
     }
+    /* 右下角返回按钮 */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ff5722;
+      border-radius: 5px;
+    }
+    .back-button:hover {
+      background-color: #e64a19;
+    }
   </style>
 </head>
 <body>
@@ -63,5 +76,8 @@
       <button onclick="window.location.href='https://peak.c.u-tokyo.ac.jp/apply/admissiondownloads/index.html'">Programs in English at Komaba (PEAK)</button>
     </div>
   </div>
+  <!-- 右下角返回按钮 -->
+  <button class="back-button" onclick="window.history.back()">回到上一页</button>
+
 </body>
 </html>
