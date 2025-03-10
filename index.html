@@ -22,6 +22,7 @@
       flex-wrap: wrap;  /* 让按钮换行显示 */
       justify-content: center;
       gap: 20px;
+      margin-top: 60px; /* 预留空间，避免被固定按钮遮挡 */
     }
     button {
       background-color: #0073e6;
@@ -35,6 +36,23 @@
     }
     button:hover {
       background-color: #005bb5;
+    }
+        /* 仅在手机端固定“东京大学”按钮 */
+    @media screen and (max-width: 768px) {
+      .fixed-button {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      .button-container {
+        margin-top: 80px; /* 防止按钮被固定的“东京大学”遮住 */
+      }
     }
   </style>
 </head>
